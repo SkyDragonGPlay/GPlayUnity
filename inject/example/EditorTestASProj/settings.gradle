@@ -1,0 +1,11 @@
+include ':app'
+
+include ":libUnityRuntime"
+project(':libUnityRuntime').projectDir = new File('../../../UnityEngine')
+
+include ":engines:GplayEngineBridge"
+project(':engines:GplayEngineBridge').projectDir = new File('../../../GplayEngineBridge')
+
+
+include ":UnitySimpleDemo"
+project(':UnitySimpleDemo').projectDir = new File('../../../sample/UnitySimpleDemo')

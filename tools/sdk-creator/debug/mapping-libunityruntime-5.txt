@@ -1,0 +1,873 @@
+bitter.jnibridge.JNIBridge -> bitter.jnibridge.JNIBridge:
+    java.lang.Object invoke(long,java.lang.Class,java.lang.reflect.Method,java.lang.Object[]) -> invoke
+    void delete(long) -> delete
+    java.lang.Object newInterfaceProxy(long,java.lang.Class[]) -> newInterfaceProxy
+    void disableInterfaceProxy(java.lang.Object) -> disableInterfaceProxy
+bitter.jnibridge.JNIBridge$a -> bitter.jnibridge.JNIBridge$a:
+    java.lang.Object a -> a
+    long b -> b
+    java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]) -> invoke
+    void finalize() -> finalize
+    void a() -> a
+com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge -> com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge:
+    java.lang.String TAG -> TAG
+    java.lang.String VERSION -> a
+    int VERSION_CODE -> b
+    java.lang.String KEY_CAPTURE_SCREEN_METHOD -> KEY_CAPTURE_SCREEN_METHOD
+    java.lang.String KEY_CAPTURE_SCREEN_FILE_NAME -> KEY_CAPTURE_SCREEN_FILE_NAME
+    java.lang.String KEY_CAPTURE_SCREEN_QUALITY -> KEY_CAPTURE_SCREEN_QUALITY
+    java.lang.String KEY_CAPTURE_SCREEN_RESULT_CODE -> KEY_CAPTURE_SCREEN_RESULT_CODE
+    java.lang.String KEY_CAPTURE_SCREEN_RESULT_MSG -> KEY_CAPTURE_SCREEN_RESULT_MSG
+    android.app.Activity mActivity -> c
+    com.skydragon.gplay.runtime.callback.IActivityCallback mActivityCallback -> d
+    com.skydragon.gplay.runtime.bridge.IBridgeProxy mBridgeProxy -> e
+    com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge sInstance -> f
+    java.util.HashMap mOptionMap -> g
+    boolean isNativeLibraryLoaded -> h
+    int mGameRunMode -> i
+    java.lang.String mDefaultResourceRootPath -> j
+    java.util.List listCaptureScreenWrapper -> k
+    java.lang.String getDefaultResourceRootPath() -> getDefaultResourceRootPath
+    java.lang.Object invokeMethodSync(java.lang.String,java.util.Map) -> invokeMethodSync
+    void invokeMethodAsync(java.lang.String,java.util.Map,com.skydragon.gplay.runtime.bridge.ICallback) -> invokeMethodAsync
+    void setOption(java.lang.String,java.lang.Object) -> setOption
+    java.lang.Object getOption(java.lang.String) -> getOption
+    void setBridgeProxy(com.skydragon.gplay.runtime.bridge.IBridgeProxy) -> setBridgeProxy
+    com.skydragon.gplay.runtime.bridge.IBridgeProxy getBridgeProxy() -> getBridgeProxy
+    com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge getInstance() -> getInstance
+    java.lang.String getRuntimeVersion() -> getRuntimeVersion
+    void loadSharedLibrary(java.util.List) -> loadSharedLibrary
+    void notifyOnLoadSharedLibrary() -> notifyOnLoadSharedLibrary
+    void startGame() -> startGame
+    void quitGame() -> quitGame
+    void init(android.app.Activity) -> init
+    void initRuntimeJNI() -> initRuntimeJNI
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onStop() -> onStop
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onDestroy() -> onDestroy
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void runOnGLThread(java.lang.Runnable) -> runOnGLThread
+    boolean isRunOnEngineContext() -> isRunOnEngineContext
+    android.view.ViewGroup getEngineLayout() -> getEngineLayout
+    void onStart() -> onStart
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    java.lang.String getGameResourceDir() -> getGameResourceDir
+    java.lang.String getSharedLibraryPath() -> getSharedLibraryPath
+    int getGameRunMode() -> getGameRunMode
+    void nativeCaptureScreen(java.lang.String,int) -> nativeCaptureScreen
+    void nativeInitRuntimeJNI() -> nativeInitRuntimeJNI
+    void nativeAddSearchPath(java.lang.String) -> nativeAddSearchPath
+    void nativePreloadResponse(java.lang.String,boolean,long) -> nativePreloadResponse
+    void nativePreloadResponse2(boolean,boolean,java.lang.String,float,float,java.lang.String) -> nativePreloadResponse2
+    void nativeDownloadFileCallback(java.lang.String,long) -> nativeDownloadFileCallback
+    void nativeSetRuntimeConfig(java.lang.String) -> nativeSetRuntimeConfig
+    void nativeExtensionAPI(java.lang.String,java.lang.String,int,double) -> nativeExtensionAPI
+    void nativeSetDefaultResourceRootPath(java.lang.String) -> nativeSetDefaultResourceRootPath
+    void doCaptureScreen(java.lang.String,int,com.skydragon.gplay.runtime.bridge.ICallback) -> a
+    java.lang.String getWritablePath() -> getWritablePath
+    void captureScreenCallback(java.lang.String) -> captureScreenCallback
+    void access$0(java.lang.String,int) -> a
+com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge$1 -> com.skydragon.gplay.unityruntime.a:
+    com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge this$0 -> a
+    java.lang.String val$picureSaveFile -> b
+    int val$quality -> c
+    void run() -> run
+com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge$CaptureScreenWrapper -> com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge$a:
+    java.lang.String mPictureSaveFile -> b
+    com.skydragon.gplay.runtime.bridge.ICallback mCallback -> c
+    com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge this$0 -> a
+    void callback() -> a
+    java.lang.String access$0(com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge$CaptureScreenWrapper) -> a
+com.skydragon.gplay.runtime.bridge.IBridge -> com.skydragon.gplay.runtime.bridge.IBridge:
+    void setBridgeProxy(com.skydragon.gplay.runtime.bridge.IBridgeProxy) -> setBridgeProxy
+    com.skydragon.gplay.runtime.bridge.IBridgeProxy getBridgeProxy() -> getBridgeProxy
+    void setOption(java.lang.String,java.lang.Object) -> setOption
+    java.lang.Object getOption(java.lang.String) -> getOption
+    java.lang.Object invokeMethodSync(java.lang.String,java.util.Map) -> invokeMethodSync
+    void invokeMethodAsync(java.lang.String,java.util.Map,com.skydragon.gplay.runtime.bridge.ICallback) -> invokeMethodAsync
+com.skydragon.gplay.runtime.bridge.IBridgeProxy -> com.skydragon.gplay.runtime.bridge.IBridgeProxy:
+    java.lang.Object invokeMethodSync(java.lang.String,java.util.Map) -> invokeMethodSync
+    void invokeMethodAsync(java.lang.String,java.util.Map,com.skydragon.gplay.runtime.bridge.ICallback) -> invokeMethodAsync
+com.skydragon.gplay.runtime.bridge.ICallback -> com.skydragon.gplay.runtime.bridge.ICallback:
+    java.lang.Object onCallback(java.lang.String,java.util.Map) -> onCallback
+com.skydragon.gplay.runtime.bridge.IEngineRuntimeBridge -> com.skydragon.gplay.runtime.bridge.IEngineRuntimeBridge:
+    void init(android.app.Activity) -> init
+    void initRuntimeJNI() -> initRuntimeJNI
+    java.lang.String getRuntimeVersion() -> getRuntimeVersion
+    void loadSharedLibrary(java.util.List) -> loadSharedLibrary
+    void startGame() -> startGame
+    void quitGame() -> quitGame
+    void onStart() -> onStart
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void notifyOnLoadSharedLibrary() -> notifyOnLoadSharedLibrary
+    android.view.ViewGroup getEngineLayout() -> getEngineLayout
+    void runOnGLThread(java.lang.Runnable) -> runOnGLThread
+    boolean isRunOnEngineContext() -> isRunOnEngineContext
+com.skydragon.gplay.runtime.bridge.IEngineRuntimeGetBridge -> com.skydragon.gplay.runtime.bridge.IEngineRuntimeGetBridge:
+    com.skydragon.gplay.runtime.bridge.IEngineRuntimeBridge getRuntimeBridge() -> getRuntimeBridge
+com.skydragon.gplay.runtime.bridge.RuntimeGetBridge -> com.skydragon.gplay.runtime.bridge.RuntimeGetBridge:
+    com.skydragon.gplay.runtime.bridge.IEngineRuntimeBridge getRuntimeBridge() -> getRuntimeBridge
+com.skydragon.gplay.runtime.callback.IActivityCallback -> com.skydragon.gplay.runtime.callback.IActivityCallback:
+    void onActivityCreate(android.app.Activity) -> onActivityCreate
+    void onActivityPause() -> onActivityPause
+    void onActivityResume() -> onActivityResume
+    void onActivityDestroy() -> onActivityDestroy
+    void onActivityResultCallback(int,int,android.content.Intent) -> onActivityResultCallback
+    void onRunOnGLThread(java.lang.Runnable) -> onRunOnGLThread
+    void onActivityWindowFocusChanged(boolean) -> onActivityWindowFocusChanged
+    android.view.ViewGroup getContainer() -> getContainer
+com.skydragon.gplay.runtime.callback.OnRuntimeStatusChangedListener -> com.skydragon.gplay.runtime.callback.OnRuntimeStatusChangedListener:
+    void onNativeLibraryLoaded() -> onNativeLibraryLoaded
+com.skydragon.gplay.unitsdk.nativewrapper.NativeWrapper -> com.skydragon.gplay.unitsdk.nativewrapper.NativeWrapper:
+    void nativeAsyncActionResult(int,java.lang.String,java.lang.String) -> nativeAsyncActionResult
+    void onAsyncActionResult(int,java.lang.String,java.lang.String) -> onAsyncActionResult
+com.unity3d.player.ITaskExecutor -> com.skydragon.gplay.unityruntime.b:
+    void executeTaskByCheckPermission(android.app.Activity,java.lang.Runnable) -> a
+com.unity3d.player.IUnityViewVisibilityController -> com.skydragon.gplay.unityruntime.c:
+    boolean setDefaultSurfaceTexture(android.hardware.Camera) -> a
+    void setViewUIVisibility(android.view.View,boolean) -> a
+    void registerSystemUiVisibilityChangeListener(android.view.View) -> a
+    void updateViewUiVisibility(android.view.View) -> b
+com.unity3d.player.NativeLoader -> com.unity3d.player.NativeLoader:
+    boolean load(java.lang.String) -> load
+    boolean unload() -> unload
+com.unity3d.player.ReflectionHelper -> com.unity3d.player.ReflectionHelper:
+    boolean LOG -> a
+    boolean LOGV -> b
+    com.unity3d.player.ReflectionHelper$MethodInfo[] methodInfos -> c
+    boolean hasLoaded(com.unity3d.player.ReflectionHelper$MethodInfo) -> a
+    void cacheMethodInfo(com.unity3d.player.ReflectionHelper$MethodInfo,java.lang.reflect.Member) -> a
+    java.lang.reflect.Constructor getConstructorID(java.lang.Class,java.lang.String) -> getConstructorID
+    java.lang.reflect.Method getMethodID(java.lang.Class,java.lang.String,java.lang.String,boolean) -> getMethodID
+    java.lang.reflect.Field getFieldID(java.lang.Class,java.lang.String,java.lang.String,boolean) -> getFieldID
+    float equalClass(java.lang.Class,java.lang.Class) -> a
+    float compareParamTypes(java.lang.Class,java.lang.Class[],java.lang.Class[]) -> a
+    java.lang.Class[] paramTypes2Classes(java.lang.String) -> a
+    java.lang.Class getParameterType(java.lang.String,int[]) -> a
+    java.lang.Object nativeProxyInvoke(int,java.lang.String,java.lang.Object[]) -> nativeProxyInvoke
+    void nativeProxyFinalize(int) -> nativeProxyFinalize
+    java.lang.Object newProxyInstance(int,java.lang.Class) -> newProxyInstance
+    java.lang.Object newProxyInstance(int,java.lang.Class[]) -> newProxyInstance
+    java.lang.Object access$0(int,java.lang.String,java.lang.Object[]) -> a
+    void access$1(int) -> a
+com.unity3d.player.ReflectionHelper$1 -> com.skydragon.gplay.unityruntime.d:
+    int val$nativeObjectId -> a
+    java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]) -> invoke
+    void finalize() -> finalize
+com.unity3d.player.ReflectionHelper$MethodInfo -> com.unity3d.player.ReflectionHelper$a:
+    java.lang.Class classObject -> b
+    java.lang.String methodName -> c
+    java.lang.String paramsType -> d
+    int id -> e
+    java.lang.reflect.Member member -> a
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+com.unity3d.player.UnityActivityNativeEvent -> com.skydragon.gplay.unityruntime.e:
+    android.os.Bundle mBundle -> a
+    boolean isSendNativeEventToDalvik() -> a
+    java.lang.String formatMessage(java.lang.String) -> a
+com.unity3d.player.UnityCamera -> com.skydragon.gplay.unityruntime.f:
+    java.lang.Object[] lockObject -> g
+    int cameraId -> h
+    int width -> i
+    int height -> j
+    int defaultFps -> k
+    android.hardware.Camera camera -> a
+    android.hardware.Camera$Parameters cameraParameters -> b
+    android.hardware.Camera$Size propPreviewSize -> c
+    int bitsPerPixel -> d
+    int[] propPreviewFpsRange -> e
+    com.unity3d.player.UnityCameraSurface mUnitySurface -> f
+    void init(com.unity3d.player.UnityCamera$onCamearFrameCallback) -> b
+    void initParameters(android.hardware.Camera$Parameters) -> a
+    int getCameraId() -> a
+    android.hardware.Camera$Size getPreviewSize() -> b
+    void setCallbackBuffer(com.unity3d.player.UnityCamera$onCamearFrameCallback) -> a
+    void setCallbackBuffer(byte[]) -> a
+    void close() -> c
+    int getBitsPerPixel() -> d
+    int[] getPropPreViewFpsRange() -> e
+    android.hardware.Camera$Size getPropPreviewSize() -> f
+    int optInt(int,int) -> a
+    java.lang.Object[] access$0(com.unity3d.player.UnityCamera) -> a
+com.unity3d.player.UnityCamera$1 -> com.skydragon.gplay.unityruntime.g:
+    com.unity3d.player.UnityCamera this$0 -> a
+    com.unity3d.player.UnityCamera$onCamearFrameCallback val$callback -> b
+    void onPreviewFrame(byte[],android.hardware.Camera) -> onPreviewFrame
+com.unity3d.player.UnityCamera$2 -> com.skydragon.gplay.unityruntime.h:
+    android.hardware.Camera localCamera -> a
+    com.unity3d.player.UnityCamera this$0 -> b
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+com.unity3d.player.UnityCamera$onCamearFrameCallback -> com.skydragon.gplay.unityruntime.f$a:
+    void onCameraFrame(com.unity3d.player.UnityCamera,byte[]) -> onCameraFrame
+com.unity3d.player.UnityCameraSurface -> com.skydragon.gplay.unityruntime.i:
+    android.app.Activity mActivity -> a
+    int mSurfaceType -> b
+    android.view.SurfaceView mSurfaceView -> c
+    void create() -> a
+    void destroy() -> b
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    android.view.SurfaceView access$0(com.unity3d.player.UnityCameraSurface) -> a
+    void access$1(com.unity3d.player.UnityCameraSurface,android.view.SurfaceView) -> a
+com.unity3d.player.UnityCameraSurface$1 -> com.skydragon.gplay.unityruntime.j:
+    com.unity3d.player.UnityCameraSurface this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityCameraSurface$2 -> com.skydragon.gplay.unityruntime.k:
+    com.unity3d.player.UnityCameraSurface this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityConstants -> com.skydragon.gplay.unityruntime.l:
+    boolean IS_GE_SDK_VERSION_11 -> a
+    boolean IS_GE_SDK_VERSION_12 -> b
+    boolean IS_GE_SDK_VERSION_14 -> c
+    boolean IS_GE_SDK_VERSION_16 -> d
+    boolean IS_GE_SDK_VERSION_17 -> e
+    boolean IS_GE_SDK_VERSION_19 -> f
+    boolean IS_GE_SDK_VERSION_21 -> g
+    boolean IS_GE_SDK_VERSION_23 -> h
+    com.unity3d.player.IUnityViewVisibilityController sUnityUiController -> i
+    com.unity3d.player.UnityViewMotionEvent sUnityViewMotionEvent -> j
+    com.unity3d.player.UnityVSYNCtiming sUnityAnimation -> k
+    com.unity3d.player.UnityDisplayListener sUnityDisplay -> l
+    com.unity3d.player.ITaskExecutor sTaskExecutor -> m
+com.unity3d.player.UnityDisplayListener -> com.skydragon.gplay.unityruntime.m:
+    void registerDisplayListener(com.unity3d.player.UnityPlayer,android.content.Context) -> a
+    void unregisterDisplayListener(android.content.Context) -> a
+    boolean show(com.unity3d.player.UnityPlayer,android.content.Context,int) -> a
+com.unity3d.player.UnityEditTextDialog -> com.skydragon.gplay.unityruntime.n:
+    android.content.Context mContext -> a
+    com.unity3d.player.UnityPlayer mUnitPlayer -> b
+    int mTextColor -> c
+    int d -> d
+    int e -> e
+    void init(android.widget.EditText,java.lang.String,int,boolean,boolean,boolean,java.lang.String) -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    int getInputType(int,boolean,boolean,boolean) -> a
+    void clearEditText(java.lang.String,boolean) -> a
+    void onClick(android.view.View) -> onClick
+    void onBackPressed() -> onBackPressed
+    android.view.View createSoftInputView() -> a
+    java.lang.String getContent() -> b
+    void selectText(java.lang.String) -> a
+    java.lang.String access$0(com.unity3d.player.UnityEditTextDialog) -> a
+    void access$1(com.unity3d.player.UnityEditTextDialog,java.lang.String,boolean) -> a
+    android.content.Context access$2(com.unity3d.player.UnityEditTextDialog) -> b
+com.unity3d.player.UnityEditTextDialog$1 -> com.skydragon.gplay.unityruntime.o:
+    com.unity3d.player.UnityEditTextDialog this$0 -> a
+    void onFocusChange(android.view.View,boolean) -> onFocusChange
+com.unity3d.player.UnityEditTextDialog$2 -> com.skydragon.gplay.unityruntime.p:
+    com.unity3d.player.UnityEditTextDialog this$0 -> a
+    boolean onKeyPreIme(int,android.view.KeyEvent) -> onKeyPreIme
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+com.unity3d.player.UnityEditTextDialog$3 -> com.skydragon.gplay.unityruntime.q:
+    com.unity3d.player.UnityEditTextDialog this$0 -> a
+    boolean onEditorAction(android.widget.TextView,int,android.view.KeyEvent) -> onEditorAction
+com.unity3d.player.UnityEnvironment -> com.skydragon.gplay.unityruntime.r:
+    boolean isRuntimeLibraryLoaded -> a
+    boolean isSDKVersionLT23 -> b
+    boolean hasWindowFocus -> c
+    boolean isPreparedEnvironment -> d
+    boolean isPause -> e
+    void setRuntimeLibraryLoadFinished() -> a
+    void setRuntimeLibraryUnload() -> b
+    boolean isRuntimeLibraryLoaded() -> c
+    void setSDKVersionLT23() -> d
+    void setWindowFocus(boolean) -> a
+    void setPaused(boolean) -> b
+    boolean isPaused() -> e
+    void setIsPreparedEnvironment(boolean) -> c
+    boolean isRunning() -> f
+    boolean hasPreparedEnvironment() -> g
+    java.lang.String toString() -> toString
+com.unity3d.player.UnityLocation -> com.skydragon.gplay.unityruntime.s:
+    android.content.Context mContext -> a
+    com.unity3d.player.UnityPlayer mUnitPlayer -> b
+    android.location.Location mLocation -> c
+    float mMinDistance -> d
+    boolean isStartUpdatingLocation -> e
+    int mAccuracy -> f
+    boolean isClosed -> g
+    int mLocationStatus -> h
+    boolean hasAvailableProvider() -> a
+    void setMinDistance(float) -> a
+    void setAccuracy(float) -> b
+    void startLocation() -> b
+    void enforceClose() -> c
+    void safeClose() -> d
+    void safeStartLocation() -> e
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void setLocation(android.location.Location) -> a
+    boolean checkNeedUpdateLocation(android.location.Location,android.location.Location) -> a
+    boolean isSameProvider(java.lang.String,java.lang.String) -> a
+    void setStatus(int) -> a
+com.unity3d.player.UnityLog -> com.skydragon.gplay.unityruntime.t:
+    boolean bshowLog -> a
+    java.lang.String TAG -> d
+    int WARN -> b
+    int ERROR -> c
+    void Log(int,java.lang.String) -> a
+com.unity3d.player.UnityMotionEvent -> com.skydragon.gplay.unityruntime.u:
+    void triggerMotionEvent(long,long,int,int,int[],float[],int,float,float,int,int,int,int,int,long[],float[]) -> a
+com.unity3d.player.UnityMotionEventHandler -> com.skydragon.gplay.unityruntime.v:
+    java.util.Queue mQueueMotionEvent -> a
+    android.app.Activity mActivity -> b
+    java.lang.Runnable mRunnbale -> c
+    android.view.MotionEvent$PointerCoords[] createPointerCoords(int,float[]) -> a
+    int assemblePointerCoords(android.view.MotionEvent$PointerCoords[],float[],int) -> a
+    void triggerMotionEvent(long,long,int,int,int[],float[],int,float,float,int,int,int,int,int,long[],float[]) -> a
+    java.util.Queue access$0(com.unity3d.player.UnityMotionEventHandler) -> a
+    android.app.Activity access$1(com.unity3d.player.UnityMotionEventHandler) -> b
+com.unity3d.player.UnityMotionEventHandler$1 -> com.skydragon.gplay.unityruntime.w:
+    com.unity3d.player.UnityMotionEventHandler this$0 -> a
+    void safeRegisterMotionEvent(android.view.View,android.view.MotionEvent) -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
+    java.lang.String TAG -> c
+    android.app.Activity currentActivity -> currentActivity
+    boolean hasSurfaceCreated -> d
+    boolean mIsGplayRuntime -> e
+    com.unity3d.player.UnityMotionEvent mUnityMotionEventHandler -> f
+    com.unity3d.player.UnitySurfaceViewManager mUnityViewManager -> g
+    com.unity3d.player.UnityEnvironment mUnityEnvironment -> h
+    java.util.concurrent.ConcurrentLinkedQueue mPendingTasks -> i
+    boolean isNativeEventPassedToDalvik -> j
+    java.lang.String mShareLibraryPath -> k
+    java.lang.String mResourceDefaultRootPath -> l
+    com.unity3d.player.UnityPlayer$GLThread glThread -> a
+    android.content.Context mContext -> m
+    android.view.SurfaceView mSurfaceView -> n
+    boolean isLoadedMainLibrary -> o
+    boolean isPaused -> p
+    com.unity3d.player.UnityLocation mUnityLocation -> q
+    android.os.Bundle bundle -> r
+    java.util.List mListUnityCameras -> s
+    com.unity3d.player.UnityVedioPlayer mUnityVedioPlayer -> t
+    com.unity3d.player.UnityEditTextDialog mEditTextDialog -> b
+    android.widget.ProgressBar mProgressBar -> u
+    java.lang.Runnable rShowProgress -> v
+    java.lang.Runnable rCloseProgress -> w
+    java.util.concurrent.locks.Lock sLock -> x
+    void initRuntime(android.content.Context) -> initRuntime
+    void checkCreateNativeGLSurfaceView(int,android.view.Surface) -> a
+    boolean createNativeGLSurfaceView(int,android.view.Surface) -> b
+    boolean displayChanged(int,android.view.Surface) -> displayChanged
+    boolean installPresentationDisplay(int) -> installPresentationDisplay
+    void loadSettings() -> a
+    android.os.Bundle getSettings() -> getSettings
+    void closeGame() -> b
+    void runOnNewThread(java.lang.Runnable) -> a
+    void runOnUiThread(java.lang.Runnable) -> b
+    void init(int,boolean) -> init
+    android.view.View getView() -> getView
+    void initNativeEvent() -> c
+    void kill() -> kill
+    void quit() -> quit
+    void closeCamera() -> d
+    void initCamera() -> e
+    void pause() -> pause
+    void resume() -> resume
+    void stop() -> f
+    void prepareEnvironment() -> g
+    void configurationChanged(android.content.res.Configuration) -> configurationChanged
+    void windowFocusChanged(boolean) -> windowFocusChanged
+    boolean loadStatic(java.lang.String) -> loadStatic
+    boolean loadLibraryStatic(java.lang.String) -> loadLibraryStatic
+    boolean loadLibrary(java.lang.String) -> loadLibrary
+    void startActivityIndicator() -> startActivityIndicator
+    void stopActivityIndicator() -> stopActivityIndicator
+    void lockNativeAccess() -> lockNativeAccess
+    void unlockNativeAccess() -> unlockNativeAccess
+    void loadRuntimeLibrary(java.lang.String) -> a
+    void loadRuntimeLibrary(android.content.pm.ApplicationInfo) -> a
+    void unloadRuntimeLibrary() -> h
+    void forwardMotionEventToDalvik(long,long,int,int,int[],float[],int,float,float,int,int,int,int,int,long[],float[]) -> forwardMotionEventToDalvik
+    void setFullscreen(boolean) -> setFullscreen
+    void showSoftInput(java.lang.String,int,boolean,boolean,boolean,boolean,java.lang.String) -> showSoftInput
+    void hideSoftInput() -> hideSoftInput
+    void setSoftInputStr(java.lang.String) -> setSoftInputStr
+    void reportSoftInputStr(java.lang.String,int,boolean) -> reportSoftInputStr
+    int[] initCamera(int,int,int,int) -> initCamera
+    void closeCamera(int) -> closeCamera
+    int getNumCameras() -> getNumCameras
+    void onCameraFrame(com.unity3d.player.UnityCamera,byte[]) -> onCameraFrame
+    boolean isCameraFrontFacing(int) -> isCameraFrontFacing
+    int getCameraOrientation(int) -> getCameraOrientation
+    void showVideoPlayer(java.lang.String,int,int,int,boolean,int,int) -> showVideoPlayer
+    void hideVideoPlayer() -> hideVideoPlayer
+    void Location_SetDesiredAccuracy(float) -> Location_SetDesiredAccuracy
+    void Location_SetDistanceFilter(float) -> Location_SetDistanceFilter
+    void Location_StartUpdatingLocation() -> Location_StartUpdatingLocation
+    void Location_StopUpdatingLocation() -> Location_StopUpdatingLocation
+    boolean Location_IsServiceEnabledByUser() -> Location_IsServiceEnabledByUser
+    boolean hasCamera() -> i
+    int getSplashMode() -> getSplashMode
+    void executeGLThreadJobs() -> executeGLThreadJobs
+    void disableLogger() -> disableLogger
+    void runOnGLTread(java.lang.Runnable) -> c
+    void queueEvent(java.lang.Runnable) -> d
+    void captureScreen(com.unity3d.player.UnityPlayer$UnityRecordVideoTask) -> a
+    boolean isFinishing() -> isFinishing
+    void checkUseObbFile() -> j
+    java.lang.String[] getObbFiles(android.content.Context) -> a
+    java.lang.String getFileMd5(java.lang.String) -> b
+    void enforeFullScreen() -> k
+    boolean injectEvent(android.view.InputEvent) -> injectEvent
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyMultiple(int,int,android.view.KeyEvent) -> onKeyMultiple
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean onGenericMotionEvent(android.view.MotionEvent) -> onGenericMotionEvent
+    android.view.SurfaceView getSurfaceView() -> getSurfaceView
+    void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String) -> UnitySendMessage
+    void nativeUnitySendMessage(java.lang.String,java.lang.String,java.lang.String) -> nativeUnitySendMessage
+    void initJni(android.content.Context) -> initJni
+    int nativeActivityIndicatorStyle() -> nativeActivityIndicatorStyle
+    void nativeAddVSyncTime(long) -> nativeAddVSyncTime
+    void nativeDone() -> nativeDone
+    void nativeFile(java.lang.String) -> nativeFile
+    void nativeFocusChanged(boolean) -> nativeFocusChanged
+    void nativeForwardEventsToDalvik(boolean) -> nativeForwardEventsToDalvik
+    void nativeInitWWW(java.lang.Class) -> nativeInitWWW
+    void nativeInitWebRequest(java.lang.Class) -> nativeInitWebRequest
+    boolean nativeInjectEvent(android.view.InputEvent) -> nativeInjectEvent
+    boolean nativePause() -> nativePause
+    void nativeRecreateGfxState(int,android.view.Surface) -> nativeRecreateGfxState
+    boolean nativeRender() -> nativeRender
+    void nativeResume() -> nativeResume
+    void nativeSetExtras(android.os.Bundle) -> nativeSetExtras
+    void nativeSetInputCanceled(boolean) -> nativeSetInputCanceled
+    void nativeSetInputString(java.lang.String) -> nativeSetInputString
+    void nativeSetLocationStatus(int) -> nativeSetLocationStatus
+    void nativeSetLocation(float,float,float,float,double,float) -> nativeSetLocation
+    void nativeSetTouchDeltaY(float) -> nativeSetTouchDeltaY
+    void nativeSoftInputClosed() -> nativeSoftInputClosed
+    void nativeVideoFrameCallback(int,byte[],int,int) -> nativeVideoFrameCallback
+    boolean access$0(com.unity3d.player.UnityPlayer) -> a
+    int access$1(com.unity3d.player.UnityPlayer) -> b
+    android.widget.ProgressBar access$2(com.unity3d.player.UnityPlayer) -> c
+    android.content.Context access$3(com.unity3d.player.UnityPlayer) -> d
+    void access$4(com.unity3d.player.UnityPlayer,android.widget.ProgressBar) -> a
+    void access$5(com.unity3d.player.UnityPlayer) -> e
+    void access$6(com.unity3d.player.UnityPlayer,int,android.view.Surface) -> a
+    com.unity3d.player.UnityEnvironment access$7(com.unity3d.player.UnityPlayer) -> f
+    void access$8(com.unity3d.player.UnityPlayer) -> g
+    boolean access$9(com.unity3d.player.UnityPlayer) -> h
+    com.unity3d.player.UnitySurfaceViewManager access$10(com.unity3d.player.UnityPlayer) -> i
+    android.view.SurfaceView access$11(com.unity3d.player.UnityPlayer) -> j
+    void access$12(com.unity3d.player.UnityPlayer) -> k
+    boolean access$13(com.unity3d.player.UnityPlayer) -> l
+    void access$14(com.unity3d.player.UnityPlayer,boolean) -> a
+    void access$15(com.unity3d.player.UnityPlayer) -> m
+    void access$16(com.unity3d.player.UnityPlayer,boolean) -> b
+    void access$17(com.unity3d.player.UnityPlayer,boolean) -> c
+    void access$18(com.unity3d.player.UnityPlayer,java.lang.String) -> a
+    void access$19(com.unity3d.player.UnityPlayer) -> n
+    void access$20(com.unity3d.player.UnityPlayer,int,byte[],int,int) -> a
+    com.unity3d.player.UnityVedioPlayer access$21(com.unity3d.player.UnityPlayer) -> o
+    void access$22(com.unity3d.player.UnityPlayer,com.unity3d.player.UnityVedioPlayer) -> a
+com.unity3d.player.UnityPlayer$1 -> com.skydragon.gplay.unityruntime.x:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$10 -> com.skydragon.gplay.unityruntime.y:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    boolean val$hasFocus -> b
+    void run() -> run
+com.unity3d.player.UnityPlayer$11 -> com.skydragon.gplay.unityruntime.z:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    boolean val$hasSystemDefaultProperties -> b
+    void run() -> run
+com.unity3d.player.UnityPlayer$12 -> com.skydragon.gplay.unityruntime.aa:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    com.unity3d.player.UnityPlayer val$unityPlayer -> b
+    java.lang.String val$content -> c
+    int val$index -> d
+    boolean val$isAutoCorrect -> e
+    boolean val$isSupportMutiLines -> f
+    boolean val$isValidPassword -> g
+    java.lang.String val$hint -> h
+    void run() -> run
+com.unity3d.player.UnityPlayer$13 -> com.skydragon.gplay.unityruntime.ab:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$14 -> com.skydragon.gplay.unityruntime.ac:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    java.lang.Runnable val$runnable -> c
+    void onRecordVideoUpdate() -> a
+com.unity3d.player.UnityPlayer$15 -> com.skydragon.gplay.unityruntime.ad:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    java.lang.String val$string -> b
+    void run() -> run
+com.unity3d.player.UnityPlayer$16 -> com.skydragon.gplay.unityruntime.ae:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    boolean val$bl -> c
+    java.lang.String val$string -> d
+    int val$n2 -> e
+    void onRecordVideoUpdate() -> a
+com.unity3d.player.UnityPlayer$17 -> com.skydragon.gplay.unityruntime.af:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    int val$cameraId -> c
+    byte[] val$arrby -> d
+    android.hardware.Camera$Size val$size -> e
+    com.unity3d.player.UnityCamera val$camera -> f
+    void onRecordVideoUpdate() -> a
+com.unity3d.player.UnityPlayer$18 -> com.skydragon.gplay.unityruntime.ag:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    java.lang.String val$fileName -> b
+    int val$backgroundColor -> c
+    int val$controlMode -> d
+    int val$scalingMode -> e
+    boolean val$isUrl -> f
+    int val$videoOffset -> g
+    int val$videoLength -> h
+    void run() -> run
+com.unity3d.player.UnityPlayer$19 -> com.skydragon.gplay.unityruntime.ah:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$2 -> com.skydragon.gplay.unityruntime.ai:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$3 -> com.skydragon.gplay.unityruntime.aj:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.unity3d.player.UnityPlayer$4 -> com.skydragon.gplay.unityruntime.ak:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+com.unity3d.player.UnityPlayer$5 -> com.skydragon.gplay.unityruntime.al:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+    com.unity3d.player.UnityPlayer access$0(com.unity3d.player.UnityPlayer$5) -> a
+com.unity3d.player.UnityPlayer$5$1 -> com.skydragon.gplay.unityruntime.am:
+    com.unity3d.player.UnityPlayer$5 this$1 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$6 -> com.skydragon.gplay.unityruntime.an:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$7 -> com.skydragon.gplay.unityruntime.ao:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    java.util.concurrent.Semaphore val$semaphore -> b
+    void run() -> run
+com.unity3d.player.UnityPlayer$8 -> com.skydragon.gplay.unityruntime.ap:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    java.util.concurrent.Semaphore val$semaphore -> b
+    void run() -> run
+com.unity3d.player.UnityPlayer$9 -> com.skydragon.gplay.unityruntime.aq:
+    com.unity3d.player.UnityPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityPlayer$EnumCommand -> com.unity3d.player.UnityPlayer$a:
+    com.unity3d.player.UnityPlayer$EnumCommand PAUSE -> a
+    com.unity3d.player.UnityPlayer$EnumCommand RESUME -> b
+    com.unity3d.player.UnityPlayer$EnumCommand QUIT -> c
+    com.unity3d.player.UnityPlayer$EnumCommand FOCUS_GAINED -> d
+    com.unity3d.player.UnityPlayer$EnumCommand FOCUS_LOST -> e
+    java.lang.String _command -> f
+    int _code -> g
+    com.unity3d.player.UnityPlayer$EnumCommand[] ENUM$VALUES -> h
+    java.lang.String getCommand() -> a
+    int getCode() -> b
+    com.unity3d.player.UnityPlayer$EnumCommand[] values() -> values
+    com.unity3d.player.UnityPlayer$EnumCommand valueOf(java.lang.String) -> valueOf
+com.unity3d.player.UnityPlayer$GLThread -> com.unity3d.player.UnityPlayer$b:
+    java.util.concurrent.ArrayBlockingQueue arrBlockQueue -> a
+    boolean isAlive -> b
+    com.unity3d.player.UnityPlayer this$0 -> c
+    void run() -> run
+    void notifyQuit() -> a
+    void notifyResume() -> b
+    void notifyPause() -> c
+    void notifyFocusChanged(boolean) -> a
+    void addCommand(com.unity3d.player.UnityPlayer$EnumCommand) -> a
+com.unity3d.player.UnityPlayer$UnityRecordVideoTask -> com.unity3d.player.UnityPlayer$c:
+    com.unity3d.player.UnityPlayer this$0 -> b
+    void run() -> run
+    void onRecordVideoUpdate() -> a
+com.unity3d.player.UnityPlayerActivity -> com.unity3d.player.UnityPlayerActivity:
+    java.lang.String TAG -> a
+    com.unity3d.player.UnityPlayer mUnityPlayer -> mUnityPlayer
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean onGenericMotionEvent(android.view.MotionEvent) -> onGenericMotionEvent
+    android.view.ViewGroup getContainer() -> getContainer
+    void onActivityCreate(android.app.Activity) -> onActivityCreate
+    void onActivityPause() -> onActivityPause
+    void onActivityResume() -> onActivityResume
+    void onActivityDestroy() -> onActivityDestroy
+    void onActivityResultCallback(int,int,android.content.Intent) -> onActivityResultCallback
+    void onActivityWindowFocusChanged(boolean) -> onActivityWindowFocusChanged
+    void runOnGLThread(java.lang.Runnable) -> runOnGLThread
+    void onRunOnGLThread(java.lang.Runnable) -> onRunOnGLThread
+com.unity3d.player.UnityPlayerNativeActivity -> com.unity3d.player.UnityPlayerNativeActivity:
+    com.unity3d.player.UnityPlayer mUnityPlayer -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean onGenericMotionEvent(android.view.MotionEvent) -> onGenericMotionEvent
+com.unity3d.player.UnityPlayerProxyActivity -> com.unity3d.player.UnityPlayerProxyActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.unity3d.player.UnityPresentation -> com.skydragon.gplay.unityruntime.ar:
+    java.lang.Object lockObject -> a
+    android.app.Presentation mPresentation -> b
+    android.hardware.display.DisplayManager$DisplayListener mDisplayListener -> c
+    void registerDisplayListener(com.unity3d.player.UnityPlayer,android.content.Context) -> a
+    void unregisterDisplayListener(android.content.Context) -> a
+    boolean show(com.unity3d.player.UnityPlayer,android.content.Context,int) -> a
+    java.lang.Object access$0(com.unity3d.player.UnityPresentation) -> a
+    android.app.Presentation access$1(com.unity3d.player.UnityPresentation) -> b
+    void access$2(com.unity3d.player.UnityPresentation,android.app.Presentation) -> a
+com.unity3d.player.UnityPresentation$1 -> com.skydragon.gplay.unityruntime.as:
+    com.unity3d.player.UnityPresentation this$0 -> a
+    com.unity3d.player.UnityPlayer val$unityPlayer -> b
+    void onDisplayAdded(int) -> onDisplayAdded
+    void onDisplayRemoved(int) -> onDisplayRemoved
+    void onDisplayChanged(int) -> onDisplayChanged
+com.unity3d.player.UnityPresentation$2 -> com.skydragon.gplay.unityruntime.at:
+    com.unity3d.player.UnityPresentation this$0 -> a
+    android.content.Context val$context -> b
+    android.view.Display val$localDisplay -> c
+    com.unity3d.player.UnityPlayer val$unityPlayer -> d
+    void run() -> run
+    com.unity3d.player.UnityPresentation access$0(com.unity3d.player.UnityPresentation$2) -> a
+com.unity3d.player.UnityPresentation$2$1 -> com.skydragon.gplay.unityruntime.au:
+    com.unity3d.player.UnityPresentation$2 this$1 -> a
+    android.content.Context val$context -> b
+    com.unity3d.player.UnityPlayer val$unityPlayer -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDisplayRemoved() -> onDisplayRemoved
+com.unity3d.player.UnityPresentation$2$1$1 -> com.skydragon.gplay.unityruntime.av:
+    com.unity3d.player.UnityPresentation$2$1 this$2 -> a
+    com.unity3d.player.UnityPlayer val$unityPlayer -> b
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+com.unity3d.player.UnitySurfaceViewManager -> com.skydragon.gplay.unityruntime.aw:
+    com.unity3d.player.UnitySurfaceViewManager _instance -> a
+    android.view.ViewGroup mRootView -> b
+    java.util.Set mViews -> c
+    android.view.SurfaceView mGameSurfaceView -> d
+    android.content.Context getContext() -> a
+    void addGameSurfaceView(android.view.SurfaceView) -> a
+    void removeGameSurfaceView(android.view.View) -> a
+    void addCameraSurfaceView(android.view.View) -> b
+    void removeCameraSurfaceView(android.view.View) -> c
+    void addView(android.view.View) -> d
+    void removeView(android.view.View) -> e
+com.unity3d.player.UnityTaskExecutor -> com.skydragon.gplay.unityruntime.ax:
+    void executeTaskByCheckPermission(android.app.Activity,java.lang.Runnable) -> a
+com.unity3d.player.UnityUncaughtExceptionHandler -> com.skydragon.gplay.unityruntime.ay:
+    java.lang.Thread$UncaughtExceptionHandler mDefaultUncaughtExceptionHandler -> a
+    boolean init() -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+com.unity3d.player.UnityVSYNCtiming -> com.skydragon.gplay.unityruntime.az:
+    void startVSYNCtiming(com.unity3d.player.UnityPlayer) -> a
+    void stopVSYNCtiming() -> a
+com.unity3d.player.UnityVSYNCtimingImpl -> com.skydragon.gplay.unityruntime.ba:
+    android.view.Choreographer mChoreographer -> a
+    long b -> b
+    android.view.Choreographer$FrameCallback mFrameCallback -> c
+    java.util.concurrent.locks.Lock mLock -> d
+    void startVSYNCtiming(com.unity3d.player.UnityPlayer) -> a
+    void stopVSYNCtiming() -> a
+    java.util.concurrent.locks.Lock access$0(com.unity3d.player.UnityVSYNCtimingImpl) -> a
+    android.view.Choreographer access$1(com.unity3d.player.UnityVSYNCtimingImpl) -> b
+    android.view.Choreographer$FrameCallback access$2(com.unity3d.player.UnityVSYNCtimingImpl) -> c
+com.unity3d.player.UnityVSYNCtimingImpl$1 -> com.skydragon.gplay.unityruntime.bb:
+    com.unity3d.player.UnityVSYNCtimingImpl this$0 -> a
+    com.unity3d.player.UnityPlayer val$unityPlayer -> b
+    void doFrame(long) -> doFrame
+com.unity3d.player.UnityVedioPlayer -> com.skydragon.gplay.unityruntime.bc:
+    boolean bShowLog -> a
+    com.unity3d.player.UnityPlayer mUnityPlayer -> b
+    android.content.Context mContext -> c
+    android.view.SurfaceView mSurfaceView -> d
+    android.view.SurfaceHolder mSurfaceHolder -> e
+    java.lang.String mFileName -> f
+    int mControlMode -> g
+    int mScalingMode -> h
+    boolean mIsURL -> i
+    long mVideoOffset -> j
+    long mVideoLength -> k
+    android.widget.FrameLayout mInstance -> l
+    int mDisplayWidth -> m
+    int mDisplayHeight -> n
+    int mVideoWidth -> o
+    int mVideoHeight -> p
+    android.media.MediaPlayer mMediaPlayer -> q
+    android.widget.MediaController mMediaController -> r
+    boolean mIsVedioSizePrepared -> s
+    boolean mIsMediaPlayerPrepared -> t
+    int mPercent -> u
+    boolean mIsPaused -> v
+    int mCurrentPosition -> w
+    boolean mIsStart -> x
+    void showLog(java.lang.String) -> a
+    void onControllerHide() -> a
+    void onPause() -> b
+    void onResume() -> c
+    void onDestroy() -> d
+    void init() -> g
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onBufferingUpdate(android.media.MediaPlayer,int) -> onBufferingUpdate
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+    void onVideoSizeChanged(android.media.MediaPlayer,int,int) -> onVideoSizeChanged
+    void onPrepared(android.media.MediaPlayer) -> onPrepared
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void doCleanUp() -> e
+    void startVideoPlayback() -> h
+    void updateVideoLayout() -> f
+    boolean canPause() -> canPause
+    boolean canSeekBackward() -> canSeekBackward
+    boolean canSeekForward() -> canSeekForward
+    int getBufferPercentage() -> getBufferPercentage
+    int getCurrentPosition() -> getCurrentPosition
+    int getDuration() -> getDuration
+    boolean isPlaying() -> isPlaying
+    void pause() -> pause
+    void seekTo(int) -> seekTo
+    void start() -> start
+    int getAudioSessionId() -> getAudioSessionId
+    com.unity3d.player.UnityPlayer access$0(com.unity3d.player.UnityVedioPlayer) -> a
+com.unity3d.player.UnityVedioPlayer$1 -> com.skydragon.gplay.unityruntime.bd:
+    com.unity3d.player.UnityVedioPlayer this$0 -> a
+    void run() -> run
+com.unity3d.player.UnityViewMotionEvent -> com.skydragon.gplay.unityruntime.be:
+    boolean registerMotionEvent(android.view.View,android.view.MotionEvent) -> a
+com.unity3d.player.UnityViewMotionEventImpl -> com.skydragon.gplay.unityruntime.bf:
+    boolean registerMotionEvent(android.view.View,android.view.MotionEvent) -> a
+com.unity3d.player.UnityViewVisibilityController -> com.skydragon.gplay.unityruntime.bg:
+    android.graphics.SurfaceTexture sDefaultSurfaceTexture -> a
+    int sSystemUIFlag -> b
+    boolean mIsContainDefaultUIFlags -> c
+    boolean setDefaultSurfaceTexture(android.hardware.Camera) -> a
+    void setViewUIVisibility(android.view.View,boolean) -> a
+    void registerSystemUiVisibilityChangeListener(android.view.View) -> a
+    void updateViewUiVisibility(android.view.View) -> b
+    void updateUiVisibility(android.view.View,int) -> a
+    void access$0(com.unity3d.player.UnityViewVisibilityController,android.view.View,int) -> a
+    boolean access$1(com.unity3d.player.UnityViewVisibilityController) -> a
+com.unity3d.player.UnityViewVisibilityController$1 -> com.skydragon.gplay.unityruntime.bh:
+    com.unity3d.player.UnityViewVisibilityController this$0 -> a
+    android.view.View val$view -> b
+    void onSystemUiVisibilityChange(int) -> onSystemUiVisibilityChange
+com.unity3d.player.UnityViewVisibilityController$2 -> com.skydragon.gplay.unityruntime.bi:
+    com.unity3d.player.UnityViewVisibilityController this$0 -> a
+    android.view.View val$view -> b
+    void run() -> run
+com.unity3d.player.UnityWebRequest -> com.unity3d.player.UnityWebRequest:
+    long nativeObjectId -> a
+    java.lang.String requestUrl -> b
+    java.lang.String method -> c
+    java.util.Map requestProperties -> d
+    java.lang.String[] protocols -> e
+    javax.net.ssl.SSLSocketFactory socketFactory -> f
+    javax.net.ssl.SSLSocketFactory getSSLSocketFactory() -> a
+    void run() -> run
+    void headerCallback(java.lang.String,java.lang.String) -> a
+    void headerCallback(java.util.Map) -> a
+    int uploadCallback(java.nio.ByteBuffer) -> a
+    void contentLengthCallback(int) -> a
+    boolean downloadCallback(java.nio.ByteBuffer,int) -> a
+    void responseCodeCallback(int) -> b
+    void unknownHostCallback(java.lang.String) -> a
+    void badProtocolCallback(java.lang.String) -> b
+    void malformattedUrlCallback(java.lang.String) -> c
+    void sslCannotConnectCallback(java.lang.String) -> d
+    void errorCallback(java.lang.String) -> e
+    int uploadCallback(long,java.nio.ByteBuffer) -> uploadCallback
+    void contentLengthCallback(long,int) -> contentLengthCallback
+    boolean downloadCallback(long,java.nio.ByteBuffer,int) -> downloadCallback
+    void responseCodeCallback(long,int) -> responseCodeCallback
+    void headerCallback(long,java.lang.String,java.lang.String) -> headerCallback
+    void errorCallback(long,int,java.lang.String) -> errorCallback
+com.unity3d.player.WWW -> com.unity3d.player.WWW:
+    int mRedirectCount -> a
+    int mRequestCode -> b
+    java.lang.String mRequestUrl -> c
+    byte[] mSendData -> d
+    java.util.Map mRequestProperties -> e
+    java.lang.String KEY_URL_FILE_APK -> f
+    boolean isGPlayRuntime -> g
+    java.lang.String sResourceRootPath -> h
+    java.lang.String preprocessUrl(java.lang.String) -> a
+    void setResourceRootPath(java.lang.String) -> setResourceRootPath
+    void setIsGPlayRuntime(boolean) -> setIsGPlayRuntime
+    void run() -> run
+    boolean headerCallback(java.util.Map) -> headerCallback
+    boolean headerCallback(java.lang.String,java.lang.String) -> headerCallback
+    boolean readCallback(byte[],int) -> readCallback
+    void progressCallback(int,int,int,int,long,long) -> progressCallback
+    boolean headerCallback(int,java.lang.String) -> headerCallback
+    boolean readCallback(int,byte[],int) -> readCallback
+    void progressCallback(int,float,float,double,int) -> progressCallback
+    void errorCallback(int,java.lang.String) -> errorCallback
+    void doneCallback(int) -> doneCallback
+org.fmod.FMODAudioDevice -> org.fmod.FMODAudioDevice:
+    java.lang.Thread mThreadFMOAudio -> a
+    boolean isRunning -> b
+    android.media.AudioTrack mAudioTrack -> c
+    boolean d -> d
+    java.nio.ByteBuffer mByteBuffer -> e
+    byte[] f -> f
+    org.fmod.UnityAudioRecord mUnityAudioRecord -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    void start() -> start
+    void stop() -> stop
+    void close() -> close
+    boolean isRunning() -> isRunning
+    void run() -> run
+    void releaseAudioTrack() -> a
+    int startAudioRecord(int,int,int) -> startAudioRecord
+    void stopAudioRecord() -> stopAudioRecord
+    int fmodGetInfo(int) -> fmodGetInfo
+    int fmodProcess(java.nio.ByteBuffer) -> fmodProcess
+    int fmodProcessMicData(java.nio.ByteBuffer,int) -> fmodProcessMicData
+org.fmod.UnityAudioRecord -> com.skydragon.gplay.unityruntime.bj:
+    org.fmod.FMODAudioDevice mAudioDevice -> a
+    java.nio.ByteBuffer mAudioData -> b
+    int mSampleRateInHz -> c
+    int mChannelConfig -> d
+    int mAudioFormat -> e
+    java.lang.Thread mThread -> f
+    boolean g -> g
+    android.media.AudioRecord mAudioRecord -> h
+    boolean mIsAudioRecordInit -> i
+    int getAudioRecordCapacity() -> a
+    void startAudioRecord() -> b
+    void stopAudioRecord() -> c
+    void run() -> run
+    void stop() -> d

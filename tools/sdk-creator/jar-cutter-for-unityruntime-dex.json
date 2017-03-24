@@ -1,0 +1,11 @@
+{
+    "ignore_files": [
+        "com/skydragon/gplay/runtime/callback/OnRuntimeStatusChangedListener",
+        "com/skydragon/gplay/runtime/callback/IActivityCallback",
+        "com/skydragon/gplay/runtime/bridge/IBridge",
+        "com/skydragon/gplay/runtime/bridge/IBridgeProxy",
+        "com/skydragon/gplay/runtime/bridge/ICallback",
+        "com/skydragon/gplay/runtime/bridge/IEngineRuntimeBridge",
+        "com/skydragon/gplay/runtime/bridge/IEngineRuntimeGetBridge"
+    ]
+}

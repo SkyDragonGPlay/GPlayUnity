@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+task jarTask(type: Jar, dependsOn: ['compileReleaseJavaWithJavac']) {
+    archiveName = "libunityruntime-jvm.jar"
+    from('build/intermediates/classes/release')
+    destinationDir = file('build/libs')
+    exclude('com/skydragon/gplay/engine/unity/BuildConfig.class')
+    exclude('com/skydragon/gplay/engine/unity/BuildConfig\$*.class')
+    exclude('**/R.class')
+    exclude('**/R\$*.class')
+    include('**/*.class')
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':engines:GplayEngineBridge')
+}

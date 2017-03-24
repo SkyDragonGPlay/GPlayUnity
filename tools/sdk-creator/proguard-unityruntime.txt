@@ -1,0 +1,145 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in /Users/zhangjunfei/work/android-sdk/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the proguardFiles
+# directive in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class arch to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-dontshrink
+-dontoptimize
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-optimizationpasses 5
+-allowaccessmodification
+-dontusemixedcaseclassnames
+-ignorewarnings
+-repackageclasses com.skydragon.gplay.unityruntime
+-keepattributes InnerClasses,Signature,*Annotation*
+-dontpreverify
+-verbose
+-dontwarn
+
+##########################################################################
+## Android System libraries that don't need to be obfuscated
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+-keep public class * extends android.app.Activity
+
+-keep public class * extends android.app.Application
+
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class android.support.v4.app.FragmentManagerMaker
+
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclasseswithmembers,allowshrinking class * {
+    native <methods>;
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+-keep class android.content.**{ *;}
+-keep class android.os.**{ *;}
+
+-keep public class com.skydragon.gplay.runtime.bridge.CocosRuntimeBridge {
+    public <fields>;
+    public <methods>;
+    static void captureScreenCallback(java.lang.String); 
+    static java.lang.String getWritablePath();
+}
+
+-keep public class com.unity3d.player.UnityPlayerActivity {
+    public <fields>;
+    protected <fields>;
+    public <methods>;
+}
+
+-keep public class com.skydragon.gplay.runtime.bridge.RuntimeGetBridge {
+    public <fields>;
+    public <methods>;
+}
+
+
+-keep public class org.fmod.FMODAudioDevice {
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class bitter.jnibridge.JNIBridge {
+    native <methods>;
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.unity3d.player.NativeLoader {
+    native <methods>;
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.unity3d.player.ReflectionHelper {
+    native <methods>;
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.unity3d.player.UnityWebRequest {
+    native <methods>;
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.unity3d.player.WWW {
+    native <methods>;
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.unity3d.player.UnityPlayer {
+    native <methods>;
+    public <fields>;
+    public <methods>;
+}
+
+-keep public class com.skydragon.gplay.unitsdk.nativewrapper.NativeWrapper {
+    native <methods>;
+    public <methods>;
+}
+
+-keep public interface com.skydragon.gplay.runtime.bridge.IBridge{*;}
+-keep public interface com.skydragon.gplay.runtime.bridge.IBridgeProxy{*;}
+-keep public interface com.skydragon.gplay.runtime.bridge.ICallback{*;}
+-keep public interface com.skydragon.gplay.runtime.bridge.IEngineRuntimeBridge{*;}
+-keep public interface com.skydragon.gplay.runtime.bridge.IEngineRuntimeGetBridge{*;}
+
+-keep public interface com.skydragon.gplay.runtime.callback.IActivityCallback{*;}
+-keep public interface com.skydragon.gplay.runtime.callback.OnRuntimeStatusChangedListener{*;}
+
+
+
