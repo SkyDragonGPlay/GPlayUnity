@@ -1,0 +1,4 @@
+InlineHook/obj/*
+*.iml
+*/build/*
+/sample/UnitySimpleDemo/*.iml
